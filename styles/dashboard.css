@@ -1,0 +1,154 @@
+/* MAIN LAYOUT */
+.dashboard-wrapper {
+  padding: 30px;
+  background: #f7fbff;
+  min-height: 100vh;
+}
+
+/* HEADER */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upload-btn {
+  background: #16a085;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* TITLES */
+.section-title {
+  margin-top: 35px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* ===== VITALS GRID ===== */
+.vitals-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.vital-card {
+  background: white;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+
+.vital-value {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* ===== REPORTS ===== */
+.reports-grid {
+  margin-top: 15px;
+}
+
+.report-card {
+  background: white;
+  border-radius: 14px;
+  padding: 18px;
+  width: 420px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.tags { margin-top: 10px; }
+
+.tag {
+  background: #eef4ff;
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin-right: 6px;
+}
+
+/* ===== MODAL ===== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(3px);
+  z-index: 1000;
+}
+
+.upload-modal {
+  width: 520px;
+  background: white;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 10px 35px rgba(0,0,0,.15);
+}
+
+.upload-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upload-sub {
+  font-size: 13px;
+  color: gray;
+  margin-bottom: 12px;
+}
+
+/* DROP ZONE */
+.upload-drop {
+  border: 2px dashed #cbd5e1;
+  background: #f9fafb;
+  border-radius: 10px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 14px;
+  cursor: pointer;
+}
+
+.upload-drop:hover {
+  border-color: #0ea5e9;
+  background: #ecfeff;
+}
+
+/* INPUTS */
+.modal-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* BUTTONS */
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.btn-cancel {
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: white;
+  border: 1px solid #ddd;
+}
+
+.btn-upload {
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: #0ea5e9;
+  color: white;
+  border: none;
+}
